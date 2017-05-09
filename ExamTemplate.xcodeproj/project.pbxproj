@@ -25,9 +25,9 @@
 /* Begin PBXFileReference section */
 		817AC2C71EC0A59C008A7B44 /* ExamTemplate */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ExamTemplate; sourceTree = BUILT_PRODUCTS_DIR; };
 		817AC2CA1EC0A59C008A7B44 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		817AC2D21EC0A60B008A7B44 /* A Warmup - 1 - Triangle Times - Algorithm.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "A Warmup - 1 - Triangle Times - Algorithm.docx"; sourceTree = "<group>"; };
-		817AC2D31EC0A60B008A7B44 /* A Warmup - 1 - Triangle Times - Test Plan.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "A Warmup - 1 - Triangle Times - Test Plan.docx"; sourceTree = "<group>"; };
-		817AC2D41EC0A60B008A7B44 /* A Warmup - 1 - Triangle Times.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "A Warmup - 1 - Triangle Times.pdf"; sourceTree = "<group>"; };
+		81F16D461EC2810200A526A3 /* A Warmup - 2 - Vote Count - Algorithm.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "A Warmup - 2 - Vote Count - Algorithm.docx"; sourceTree = "<group>"; };
+		81F16D471EC2810200A526A3 /* A Warmup - 2 - Vote Count - Test Plan.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "A Warmup - 2 - Vote Count - Test Plan.docx"; sourceTree = "<group>"; };
+		81F16D481EC2810200A526A3 /* A Warmup - 2 - Vote Count.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "A Warmup - 2 - Vote Count.pdf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,9 +69,9 @@
 		817AC2D11EC0A5F9008A7B44 /* Documents */ = {
 			isa = PBXGroup;
 			children = (
-				817AC2D21EC0A60B008A7B44 /* A Warmup - 1 - Triangle Times - Algorithm.docx */,
-				817AC2D31EC0A60B008A7B44 /* A Warmup - 1 - Triangle Times - Test Plan.docx */,
-				817AC2D41EC0A60B008A7B44 /* A Warmup - 1 - Triangle Times.pdf */,
+				81F16D461EC2810200A526A3 /* A Warmup - 2 - Vote Count - Algorithm.docx */,
+				81F16D471EC2810200A526A3 /* A Warmup - 2 - Vote Count - Test Plan.docx */,
+				81F16D481EC2810200A526A3 /* A Warmup - 2 - Vote Count.pdf */,
 			);
 			name = Documents;
 			sourceTree = "<group>";
@@ -271,6 +271,7 @@
 				817AC2D01EC0A59C008A7B44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
