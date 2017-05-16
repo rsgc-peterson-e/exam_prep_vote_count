@@ -26,7 +26,7 @@ while promptNum <= 1 {
     
     // Show the prompt
     if (promptNum == 0) {
-        print("Votes", terminator: "")
+        print("Votes? ", terminator: "")
     }
     
     // Get the user's input
@@ -44,10 +44,10 @@ while promptNum <= 1 {
                 }
             }
         } else {
-            var goodString : Bool = true
             if notNilInput.characters.count == inputs[0] as! Int {
+                var goodString : Bool = true
                 for c in notNilInput.characters {
-                    if (c != "A" || c != "B") {
+                    if (c != "A" && c != "B") {
                         goodString = false
                     }
                 }
@@ -56,9 +56,11 @@ while promptNum <= 1 {
                     promptNum += 1
                 } else {
                     print("ERROR")
+                    promptNum = 0
                 }
             } else {
                 print("ERROR")
+                promptNum = 0
             }
         }
         
@@ -77,7 +79,28 @@ while promptNum <= 1 {
  */
 
 // Add 'process' code below....
-print("replace with process logic")
+
+// count A and B Votes
+var output : String!
+
+var AVotes = 0
+var BVotes = 0
+
+for character in (inputs[1] as! String).characters {
+    if (character == "A") {
+        AVotes += 1
+    } else {
+        BVotes += 1
+    }
+}
+
+if (AVotes > BVotes) {
+    output = "A"
+} else if (BVotes > AVotes) {
+    output = "B"
+} else {
+    output = "TIE"
+}
 
 
 /*
@@ -91,5 +114,5 @@ print("replace with process logic")
  */
 
 // Add 'output' code below... replace what is here as needed.
-//print("The input given was: \(inputToProcess)")
+print(output)
 
