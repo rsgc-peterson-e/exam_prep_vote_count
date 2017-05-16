@@ -19,13 +19,15 @@ import Foundation
  Make use of your test plan and algorithm to ensure your code is complete.
  
  */
-var inputToProcess : String = ""
-
+var inputs : [Int : Any] = [:]
+var promptNum = 0
 // Loop until valid input is received
-while inputToProcess == "" {
+while promptNum <= 1 {
     
     // Show the prompt
-    print("Ask the question here? ", terminator: "")
+    if (promptNum == 0) {
+        print("Votes", terminator: "")
+    }
     
     // Get the user's input
     var input : String?
@@ -34,12 +36,31 @@ while inputToProcess == "" {
     // Use optional binding to see if the string can be unwrapped (to see if it is not nil)
     if let notNilInput = input {
         
-        // You probably need to add additional checks to be sure the
-        // input received is valid
-        // Add checks as needed...
-        
-        // Save the input given, as we are certain it's what we are looking for now
-        inputToProcess = notNilInput
+        if (promptNum == 0) {
+            if let inputAsInt = Int(notNilInput) {
+                if inputAsInt >= 1 && inputAsInt <= 15 {
+                    inputs[promptNum] = inputAsInt
+                    promptNum += 1
+                }
+            }
+        } else {
+            var goodString : Bool = true
+            if notNilInput.characters.count == inputs[0] as! Int {
+                for c in notNilInput.characters {
+                    if (c != "A" || c != "B") {
+                        goodString = false
+                    }
+                }
+                if (goodString) {
+                    inputs[1] = notNilInput
+                    promptNum += 1
+                } else {
+                    print("ERROR")
+                }
+            } else {
+                print("ERROR")
+            }
+        }
         
     }
     
@@ -70,5 +91,5 @@ print("replace with process logic")
  */
 
 // Add 'output' code below... replace what is here as needed.
-print("The input given was: \(inputToProcess)")
+//print("The input given was: \(inputToProcess)")
 
